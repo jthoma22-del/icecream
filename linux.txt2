@@ -1,0 +1,16 @@
+Flag 1: CMSC201{off_to_the_races!}
+Ran `cool-command gimmeflag` from the home directory.
+
+Flag 2: CMSC201{cd_complete!}
+Ran `cd /files/folder1/folder2` then `ls`; the flag was the filename itself.
+
+Flag 3: (from /etc/flag_here.txt)
+Ran `cat README.txt` in folder2, which pointed to etc/flag_here.txt from root.
+
+Flag 4: (paste here)
+Ran `find /complex -name flag.txt`, which returned
+/complex/folder1/subfolder8/flag.txt. Then ran
+`cat /complex/folder1/subfolder8/flag.txt`.
+
+Flag 5: CMSC201{what_does_grep_even_mean}
+Ran `grep CMSC201 /bad-story`, which printed the line containing the flag.

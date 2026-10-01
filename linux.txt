@@ -1,0 +1,20 @@
+Flag 1: CMSC201{off_to_the_races!}
+Ran `cool-command gimmeflag` from the home directory.
+
+Flag 2: CMSC201{cd_complete!}
+Ran `cd /files/folder1/folder2` to change directory, then `ls` to list the
+files. The flag was the filename itself.
+
+Flag 3: CMSC201{cat_has_been_found}
+Ran `cat README.txt` in folder2 to read its contents, which pointed to
+etc/flag_here.txt from the root directory. Then ran `cat /etc/flag_here.txt`
+to read that file.
+
+Flag 4: CMSC201{finding_find}
+Ran `find /complex -iname flag.txt` to locate the file, which returned
+/complex/folder1/subfolder8/flag.txt. Then ran
+`cat /complex/folder1/subfolder8/flag.txt` to read it.
+
+Flag 5: CMSC201{what_does_grep_even_mean}
+Ran `grep CMSC201 /bad-story`, which searched the file for lines containing
+CMSC201 and printed the line with the flag.
