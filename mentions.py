@@ -1,0 +1,33 @@
+'''''
+Joshua Thomas
+Section 16
+The program takes a string from the user and returns two separate lists 
+of usernames and hashtags found in the string.
+'''
+
+
+def mentions(the_text):
+    usernames = []
+    hashtags = []
+
+    words = the_text.split()
+    for word in words:
+        if len(word) > 1:  # Only consider words with more than one character
+            name = word[1:]  # Remove only the first symbol
+            if word.startswith("@"):
+                if name not in usernames:  # Check for duplicates
+                    usernames.append(name)
+            elif word.startswith("#"):
+                if name not in hashtags:  # Check for duplicates
+                    hashtags.append(name)
+
+    return [usernames, hashtags]
+
+
+if __name__ == "__main__":
+    line = input()
+    while line != "":
+        usernames, hashtags = mentions(line)
+        print(usernames)
+        print(hashtags)
+        line = input()

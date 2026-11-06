@@ -1,0 +1,11 @@
+def mentions(the_text):
+    words = list(set(the_text.split()))
+    for word in words:
+        if word.startswith("@"):
+            print(word)
+
+if __name__ == "__main__":
+    line = input()
+    while line != "":
+        mentions(line)
+        line = input()

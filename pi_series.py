@@ -1,7 +1,8 @@
 '''
 Joshua Thomas
 Section 16
-The program takes user input and calculates pi using a given formula and alternating signs.
+The program takes user input and calculates pi using 
+a given formula and alternating signs.
 '''
 
 

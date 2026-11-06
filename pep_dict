@@ -1,0 +1,17 @@
+def dict(name, number) :
+    people_dict={}
+    people_dict[name]=number
+    if number not in people_dict.values():
+        people_dict[name]=number
+    print(people_dict)
+
+
+
+    if __name__ == "__main__":
+    pep=name, number=input().split()
+    number =int(number)
+
+    while pep!="quit":
+        pep=name, number=input().split()
+        number =int(number)
+        dict(name, number)

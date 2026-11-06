@@ -1,0 +1,5 @@
+words= "apple, banana, orange"
+
+for letter in (words):
+    if letter==letter:
+        print(letter[9])
