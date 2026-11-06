@@ -1,0 +1,33 @@
+Joshua Thomas
+Section 16
+Advanced linux txt
+
+
+
+Flag 1: CMSC201{wow_i_love_linux}
+Run cool-command -f gimme flag please to display the first flag: CMSC201{wow_i_love_linux}.
+
+
+Flag 2:  CMSC201{gold_medal_in_cd-ing}
+Run cd /cd-maze to enter the cd-maze directory under the root directory. Use ls to list files in folder (dungeon, windmill), 
+then cd to dungeon. Use ls to list files in dungeon, then per instruction cd to tunnel8. List files in tunnel8 
+using ls, then read file "cat sign.txt."
+Follow instructions:"Turn around and go into tunnel 21!" Exit tunnel8 using cd .. then cd into tunnel21. Use ls to list files 
+in tunnel21, use cat to read text {The wisdom you seek is in number 10}. Use cd .. to exit tunnel21 and cd to tunnel27
+per instruction. Use ls to list files in tunnel27. "exit" shows up so cd to exit, then use ls to list files in the exit directory. 
+cd to beach and use ls to list files in beach. From the list of files cd to pier10 since the message from tunnel21 advised it.
+Use ls to view a list of files in pier10. Use cat sign.txt to read the file which is the flag-CMSC201{gold_medal_in_cd-ing}
+
+Flag 3 CMSC201{ended_up_being_recipe_777}
+Use cat /i_love_soup.txt to read the recipes without changing directories. Then run: 
+grep broccoli /i_love_soup.txt | grep mushroom | grep pumpkin | grep lentil | grep tomato 
+to filter through the recipes to find a recipe containing all the listed ingredients.
+CMSC201{ended_up_being_recipe_777} appears which is the third flag.
+
+Flag 4 CMSC201{i_love_linguine}
+cd to /my_recipes. Run ls -la to run the long ls format containing file permission.
+Look for file permission 644 -rw-r--r-- linguine.txt. Read file: cat linguine.txt  
+The fourth flag appears CMSC201{i_love_linguine}
+
+Flag 5 CMSC201{error_more_like...uhhh...cool-or...}
+Run secret-error 2>/dev/null to discard stderr (file descriptor 2), flag 5 will be visible on stdout (file descriptor 1).

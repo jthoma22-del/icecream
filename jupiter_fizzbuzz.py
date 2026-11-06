@@ -1,7 +1,7 @@
 """
 Joshua Thomas (Section 16)
 JupiterFizzBuzz
-This program users an integer from the user and determines whether one number is divisible bycertain numbers
+This program uses an integer from the user and determines whether one number is divisible bycertain numbers
 using these conditions:
 1. If the number is divisible by 6, the program prints "Fizz".
 2. If the number is divisible by 10, the program prints "Buzz".

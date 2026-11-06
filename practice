@@ -1,0 +1,36 @@
+
+'''
+PROMPT = "What's your order? "
+user_input = " ".join(input(PROMPT).lower().split())
+order_list = []
+while user_input != "done":
+    if user_input not in order_list:
+        order_list.append(user_input) 
+    user_input = " ".join(input(PROMPT).lower().split())
+
+print(order_list)
+
+
+
+
+my_string = "abababa"
+print(my_string.split("a"))
+
+
+my_split_string = ["hello", "world"]
+" ".join(my_split_string)
+print(" ".join(my_split_string))
+'''
+places_list = ["dc","virginia","maryland"]
+correct_list = []
+
+while len(places_list) > 0:
+    user_input = input("Give place name: ").lower()
+    user_list = user_input.split(",")
+    for entry in user_list:
+        if entry in places_list:
+            print("Correct!", entry)
+            places_list.remove(entry)
+            correct_list.append(entry)
+
+print("Cool!", correct_list)

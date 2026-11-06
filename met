@@ -1,0 +1,112 @@
+'''0.9 + 0.1  # equals 1.0?
+0.2 + 0.1  # equals what?
+
+print(0.9 + 0.1)
+print(0.2 + 0.1)
+print("hello\n")
+print("hi hows it going\rhey")
+print("they said: \"hi\"")
+
+print("welcome!")
+if input() == "hello":
+    print("hello!")
+print("thanks for coming in, how can I help you?")
+
+
+var_two == 30
+var_one == 100
+if var_one + var_two > 200:
+    print("Yeah, they are.")
+
+Challenge: Write a conditional that tells me if I should turn the AC on or off.
+If temperature greater than 80, turn AC on if it is off, otherwise print "no action required".
+Do the opposite for if temp less than 80.
+
+
+temperature = int(input())
+ac_on = False
+if temperature > 80:
+    if not ac_on:
+        ac_on = True
+        print("turn AC on")
+    else:
+        print("no action required")
+elif temperature < 80:
+    if not ac_on:
+        ac_on = True
+        print("turn ac off")
+    else:
+        print("no action required")
+else:
+    print("no action required")
+
+
+temperature = float(input("Enter the temperature: "))
+ac_on = input("Is the AC on? (yes/no): ").strip().lower() == "yes"
+
+if temperature > 80:
+    if not ac_on:
+        print("Turn AC on.")
+    else:
+        print("no action required")
+elif temperature < 80:
+    if ac_on:
+        print("Turn AC off.")
+    else:
+        print("no action required")
+else:
+    print("no action required")
+
+
+
+my_string = "AAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAA"
+print(my_string.strip("A"))
+
+my_string = "AAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAA"
+print(my_string.strip("Z"))
+
+my_string = "abababa"
+print(my_string.split("a"))
+
+my_string = "abaabaaba"
+print(my_string.split("a"))
+
+
+input_sentence = input("Give sentence: ")
+input_split = input_sentence.split()
+
+for word_index in range(len(input_split)):
+    if "apple" in input_split[word_index].lower():
+        input_split[word_index] = "dragonfruit"
+    elif "dragonfruit" in input_split[word_index].lower():
+        input_split[word_index] = "government-sponsored dragonfruit(TM)"
+
+print(" ".join(input_split))
+
+letters = ["a", "b", "c"]
+# This is identical to pop with no index argument
+letter = letters.pop(-1)
+# What did I get?
+print(letter)
+
+my_favorite_numbers = [1, 1, 2, 3, 5, 8, 13, 21]
+for num in my_favorite_numbers:
+    num *= 2
+    print(num, end='')
+    
+my_favorite_numbers = [1, 1, 2, 3, 5, 8, 13, 21]
+for index in range(len(my_favorite_numbers)):
+    my_favorite_numbers[index] *= 2
+    print(my_favorite_numbers)
+    
+NUMBER_OF_STEPS = 10
+sequence = [1, 1]
+for i in range(NUMBER_OF_STEPS):
+    sequence.append(sequence[i] + sequence[i+1])
+
+    print(sequence)
+'''
+my_favorite_numbers = [1, 1, 2, 3, 5, 8, 13]
+new_list = my_favorite_numbers + [21]
+new_list[0] = "AAAA"
+print(my_favorite_numbers)  # ? Contains AAAA or not?

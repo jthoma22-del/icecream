@@ -1,0 +1,32 @@
+
+'''
+user = input()
+while user != "done":
+    print(user)
+    user = input()
+
+lines = []
+user = input()
+
+while user != "done":
+    lines.append(user)
+    user = input()
+
+for line in lines:
+    print(line)
+
+
+while True:
+    text = input()
+
+    if text == "done":
+        break
+
+    print(text)
+
+'''
+user = input()
+while user != "done":
+
+    print(user)
+    user = input()

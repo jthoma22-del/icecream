@@ -18,3 +18,55 @@ if valid:
 
 else:
     print("Invalid key! The authorities have been notified.")
+vowels = "aeiouyAEIOUY"
+
+
+def eLatinTrans(sentence):
+    mySent = (sentence).split(" ")
+    print(mySent)
+    eLatin = ""
+    for word in mySent:
+        n = 1
+        up = False
+        cap = False
+
+        if word.isupper():
+            up = True
+        if word.istitle():
+            cap = True
+        pre = ""
+        for char in range(len(word)):
+            if word[char].isalpha() or word[char].isdigit():
+                break
+            pre += word[:char+1]
+            word = word[char+1:]
+
+        pos = ""
+        for char in range(len(word)-1, 0, -1):
+            if word[char].isalpha() or word[char].isdigit():
+                break
+            pos = word[char:]+pos
+            word = word[:char]
+
+        if word[0] in vowels:
+            word += "yay"
+
+        if word[0:n].isdigit() == True:
+            n += 1
+            word = word+" "
+
+        elif word[0] not in vowels and word[1] in vowels:
+            word = word[1:]+word[0] + "ay"
+
+        elif word[0:n] not in vowels:
+            n += 1
+            word = word[n:]+word[0:n]+"ay"
+
+        if up:
+            word = word.upper()
+
+        if cap:
+            word = word.title()
+
+        eLatin += pre+word+pos+" "
+    return eLatin
